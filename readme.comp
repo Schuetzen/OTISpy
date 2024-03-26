@@ -1,0 +1,88 @@
+
+  OTIS: One-dimensional Transport with Inflow and Storage
+  -------------------------------------------------------
+  Version: MOD40         Feb. 1998
+  
+
+  Compilation Instructions
+  ------------------------
+  Executable binaries of the OTIS solute transport model are available for
+  a number of hardware platforms and operating systems.  As a result,
+  compilation of the source code may not be required.  Compilation is
+  required in the following situations:
+
+  a) Executable binaries are not available for your specific hardware
+    platform/operating system.
+
+  b) The dimensions of the modeled system exceed the maximum dimensions
+    specified in the include files (fmodules.inc, fmodules2.inc).
+
+  c) Modifications have been made to the underlying computer code.
+
+  Prior to compilation, edit d1mach.f, as described in 'Machine Constants'
+  below.  To compile OTIS, OTIS-P, and POSTPROC, simply type 'make' on the
+  command line while in this directory.  To create a single piece of
+  software, type 'make softwarename', where software-name equals otis,
+  otis-p or postproc.
+
+  Additional information on software compilation is provided in the
+  model documentation.
+
+
+  Machine Constants
+  -----------------
+  Prior to compilation, several hardware-specific machine constants must
+  be set in ./source/starpac/d1mach.f.  This is accomplished by editing
+  the data statements in d1mach.f as shown below.
+
+  For the SUN, DG, and IBM workstations, the machine constants should
+  be set as follows:
+
+C
+C
+C     MACHINE CONSTANTS FOR IEEE ARITHMETIC MACHINES, SUCH AS THE AT&T
+C     3B SERIES AND MOTOROLA 68000 BASED MACHINES (E.G. SUN 3 AND AT&T
+C     PC 7300), IN WHICH THE MOST SIGNIFICANT BYTE IS STORED FIRST.
+C
+      DATA SMALL(1),SMALL(2) /    1048576,          0 /
+      DATA LARGE(1),LARGE(2) / 2146435071,         -1 /
+      DATA RIGHT(1),RIGHT(2) / 1017118720,          0 /
+      DATA DIVER(1),DIVER(2) / 1018167296,          0 /
+      DATA LOG10(1),LOG10(2) / 1070810131, 1352628735 /
+
+
+  For the DEC workstations and Pentium II PCs, the machine constants should
+  be set as follows:
+
+C
+C     MACHINE CONSTANTS FOR IEEE ARITHMETIC MACHINES AND 8087-BASED
+C     MICROS, SUCH AS THE IBM PC AND AT&T 6300, IN WHICH THE LEAST
+C     SIGNIFICANT BYTE IS STORED FIRST.
+C
+      DATA SMALL(1),SMALL(2) /          0,    1048576 /
+      DATA LARGE(1),LARGE(2) /         -1, 2146435071 /
+      DATA RIGHT(1),RIGHT(2) /          0, 1017118720 /
+      DATA DIVER(1),DIVER(2) /          0, 1018167296 /
+      DATA LOG10(1),LOG10(2) / 1352628735, 1070810131 /
+
+---------------------------------------------------------------------------
+
+  Reference
+  ---------
+  Runkel, R.L., 1998, One dimensional transport with inflow and
+    storage (OTIS): A solute transport model for streams and rivers:
+    U.S. Geological Survey Water-Resources Investigation Report
+    98-4018. xx p.
+
+  Homepage:  http://webserver.cr.usgs.gov/otis
+  ---------
+
+  Correspondence
+  --------------
+  R.L. Runkel
+  U.S. Geological Survey
+  Mail Stop 415
+  Denver Federal Center
+  Lakewood, CO 80225
+  Internet: runkel@usgs.gov
+

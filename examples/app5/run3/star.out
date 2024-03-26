@@ -1,0 +1,487 @@
+
+
+
+
+
+     STARPAC output for Reach #  1
+
+
+
+                                                                                                         STARPAC 2.08D (03/15/90)
++**********************************************************************************
+ *  NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES  *
+ **********************************************************************************
+
+
+ SUMMARY OF INITIAL CONDITIONS
+ ------------------------------
+
+
+                                                  STEP SIZE FOR    OBSERVATIONS FAILING STEP SIZE SELECTION CRITERIA
+                                                  APPROXIMATING                     *
+       PARAMETER STARTING VALUE      SCALE          DERIVATIVE       COUNT     NOTES     ROW NUMBER
+ INDEX  FIXED      (PAR)            (SCALE)           (STP)                     F C
+
+   1      NO    1.9970020           DEFAULT      0.26312342E-04         0          
+   2      NO    30.396840           DEFAULT      0.62766113E-06         0          
+   3      NO    7.0065430           DEFAULT      0.30983959E-05         0          
+   4      NO   0.20625160E-03       DEFAULT      0.33716141E-05         0          
+   5     YES   0.88500000E-05         ---              ---              -
+   6     YES   0.88500000E-05         ---              ---              -
+   7     YES           0.             ---              ---              -
+   8     YES           0.             ---              ---              -
+   9     YES           0.             ---              ---              -
+  10     YES           0.             ---              ---              -
+
+
+ *  NOTES.  A PLUS (+) IN THE COLUMNS HEADED F OR C HAS THE FOLLOWING MEANING.
+
+    F - NUMBER OF OBSERVATIONS FAILING STEP SIZE SELECTION CRITERIA EXCEEDS
+        NUMBER OF EXEMPTIONS ALLOWED.
+
+    C - HIGH CURVATURE IN THE MODEL IS SUSPECTED AS THE CAUSE OF
+        ALL FAILURES NOTED.
+
+ NUMBER OF RELIABLE DIGITS IN MODEL RESULTS                         (NETA)    12
+
+ PROPORTION OF OBSERVATIONS EXEMPTED FROM SELECTION CRITERIA       (EXMPT)  0.1000
+
+ NUMBER OF OBSERVATIONS EXEMPTED FROM SELECTION CRITERIA                       2
+
+ NUMBER OF OBSERVATIONS                                                (N)    27
+
+ NUMBER OF NON ZERO WEIGHTED OBSERVATIONS                           (NNZW)    27
+
+ NUMBER OF INDEPENDENT VARIABLES                                       (M)     1
+
+ MAXIMUM NUMBER OF ITERATIONS ALLOWED                                (MIT)   100
+
+ MAXIMUM NUMBER OF MODEL SUBROUTINE CALLS ALLOWED                            200
+
+ CONVERGENCE CRITERION FOR TEST BASED ON THE
+
+      FORECASTED RELATIVE CHANGE IN RESIDUAL SUM OF SQUARES       (STOPSS)  0.1000E-04
+      MAXIMUM SCALED RELATIVE CHANGE IN THE PARAMETERS             (STOPP)  0.1000E-04
+
+
+ MAXIMUM CHANGE ALLOWED IN THE PARAMETERS AT THE FIRST ITERATION   (DELTA)   1.000    
+
+ RESIDUAL SUM OF SQUARES FOR INPUT PARAMETER VALUES                          1.282    
+
+ RESIDUAL STANDARD DEVIATION FOR INPUT PARAMETER VALUES              (RSD)  0.2361    
+1
+                                                                                                         STARPAC 2.08D (03/15/90)
++NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES, CONTINUED
+
+
+ ITERATION NUMBER    1
+ ----------------------
+     MODEL                                                     FORECASTED
+     CALLS         RSD             RSS        REL CHNG RSS    REL CHNG RSS    REL CHNG PAR
+                                                              VALUE   CHKD    VALUE   CHKD
+         2      0.2360           1.281          0.9001E-03  0.9150E-03   Y  0.1324E-03   Y
+
+      CURRENT PARAMETER VALUES (ONLY UNFIXED PARAMETERS ARE LISTED)
+          INDEX    1              2              3              4
+          VALUE   1.963041       30.40114       7.025559      0.2064751E-03
+
+
+ ITERATION NUMBER    2
+ ----------------------
+     MODEL                                                     FORECASTED
+     CALLS         RSD             RSS        REL CHNG RSS    REL CHNG RSS    REL CHNG PAR
+                                                              VALUE   CHKD    VALUE   CHKD
+         3      0.2360           1.281          0.1937E-05  0.1761E-05   Y  0.1951E-04   Y
+
+      CURRENT PARAMETER VALUES (ONLY UNFIXED PARAMETERS ARE LISTED)
+          INDEX    1              2              3              4
+          VALUE   1.961234       30.39996       7.025858      0.2065615E-03
+
+ ***** RESIDUAL SUM OF SQUARES CONVERGENCE *****
+1
+                                                                                                         STARPAC 2.08D (03/15/90)
++NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES, CONTINUED
+
+
+ RESULTS FROM LEAST SQUARES FIT
+ -------------------------------
+
+                                                     DEPENDENT       PREDICTED      STD DEV OF                         STD 
+  ROW             PREDICTOR VALUES                    VARIABLE         VALUE        PRED VALUE        RESIDUAL         RES    WEIGHT
+ 
+    1                 11.000000                             0.      0.15766677E-03  0.10484790E-03 -0.15766677E-03    0.00 0.100E+01
+    2                 11.250000                     0.23000000      0.30546336      0.63345148E-01 -0.75463356E-01   -0.33 0.100E+01
+    3                 11.330000                      1.1000000       1.3497555      0.14461631     -0.24975552       -1.34 0.100E+01
+    4                 11.420000                      4.4100000       4.3047681      0.15947440      0.10523191        0.61 0.100E+01
+    5                 11.500000                      8.1900000       7.9608302      0.16459136      0.22916983        1.36 0.100E+01
+    6                 11.580000                      11.000000       10.974536      0.13830482      0.25463860E-01    0.13 0.100E+01
+    7                 11.670000                      12.350000       12.648037      0.11377877     -0.29803660       -1.44 0.100E+01
+    8                 11.700000                      12.880000       12.768864      0.11230381      0.11113609        0.54 0.100E+01
+    9                 11.750000                      12.490000       12.601473      0.11671886     -0.11147273       -0.54 0.100E+01
+   10                 11.830000                      12.060000       11.755658      0.12258266      0.30434240        1.51 0.100E+01
+   11                 11.920000                      11.380000       10.664732      0.10168508      0.71526760        3.36 0.100E+01
+   12                 12.000000                      9.5600000       9.7190115      0.10259121     -0.15901149       -0.75 0.100E+01
+   13                 12.080000                      8.3800000       8.7974023      0.10631395     -0.41740229       -1.98 0.100E+01
+   14                 12.170000                      7.4500000       7.6494668      0.92685042E-01 -0.19946678       -0.92 0.100E+01
+   15                 12.250000                      6.5900000       6.6060660      0.80427160E-01 -0.16066019E-01   -0.07 0.100E+01
+   16                 12.330000                      5.7000000       5.6896462      0.70373087E-01  0.10353786E-01    0.05 0.100E+01
+   17                 12.420000                      5.1100000       4.8608586      0.64827407E-01  0.24914139        1.10 0.100E+01
+   18                 12.500000                      4.3200000       4.2208730      0.51158649E-01  0.99127042E-01    0.43 0.100E+01
+   19                 12.580000                      3.7200000       3.6652284      0.41292787E-01  0.54771608E-01    0.24 0.100E+01
+   20                 12.670000                      3.2300000       3.1532357      0.40453447E-01  0.76764325E-01    0.33 0.100E+01
+   21                 12.750000                      2.8800000       2.7466060      0.39618756E-01  0.13339403        0.57 0.100E+01
+   22                 12.830000                      2.5000000       2.3732792      0.39871582E-01  0.12672081        0.54 0.100E+01
+   23                 12.920000                      2.1500000       2.0200556      0.41145711E-01  0.12994443        0.56 0.100E+01
+   24                 13.000000                      1.8600000       1.7626318      0.42256240E-01  0.97368189E-01    0.42 0.100E+01
+   25                 13.250000                      1.2000000       1.1188199      0.40970573E-01  0.81180066E-01    0.35 0.100E+01
+   26                 13.500000                     0.89000000      0.71851854      0.34639604E-01  0.17148146        0.73 0.100E+01
+   27                 14.500000                             0.      0.11792280      0.96275415E-02 -0.11792280       -0.50 0.100E+01
+1
+                                                                                                         STARPAC 2.08D (03/15/90)
++NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES, CONTINUED
+
+                     STD RES VS ROW NUMBER                                     STD RES VS PREDICTED VALUES 
+  3.75++---------+---------+----+----+---------+---------++    3.75++---------+---------+----+----+---------+---------++
+      -                                                   -        -                                                   -
+      -                   *                               -        -                                          *        -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+  2.25+                                                   +    2.25+                                                   +
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -        *        *                                 -        -                               *              *    -
+      -                               *                   -        -                   *                               -
+  0.75+                                                   +    0.75+                                                   +
+      -      *      *                        * * *     *  -        -   *    ** *     *                                *-
+      -                                 * * *      * *    -        -    *  *    * *  *                                 -
+      -*         *                * *                     -        -*                     *   *                *       -
+      -  *                                                -        - *                                                 -
+ -0.75+               *     *                            *+   -0.75+*                                     *          * +
+      -                         *                         -        -                              *                    -
+      -    *                                              -        -     *                                             -
+      -            *                                      -        -                                                  *-
+      -                                                   -        -                                                   -
+ -2.25+                       *                           +   -2.25+                                  *                +
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+ -3.75++---------+---------+----+----+---------+---------++   -3.75++---------+---------+----+----+---------+---------++
+      1.0                     14.0                     27.0     0.1577E-03                6.385                12.77    
+
+             AUTOCORRELATION FUNCTION OF RESIDUALS                        NORMAL PROBABILITY PLOT OF STD RES 
+     1++---------+---------+----******---------+---------++    3.75++---------+---------+----+----+---------+---------++
+      -                  ********                         -        -                                                   -
+      -                    ******                         -        -                                             *     -
+      -                     *****                         -        -                                                   -
+      -                         **                        -        -                                                   -
+     6+                         **********                +    2.25+                                                   +
+      -                         ***                       -        -                                                   -
+      -                   *******                         -        -                                                   -
+      -                        **                         -        -                                      * *          -
+      -                         *                         -        -                                    *              -
+    11+                         ***                       +    0.75+                                                   +
+      -                         ***                       -        -                            **** **                -
+      -                         **                        -        -                         ***                       -
+      -                         *                         -        -                     ****                          -
+      -                         ***                       -        -                    *                              -
+    16+                         *                         +   -0.75+                ** *                               +
+      -                        **                         -        -              *                                    -
+      -                         *                         -        -            *                                      -
+      -                        **                         -        -          *                                        -
+      -                         *                         -        -                                                   -
+    21+                         *                         +   -2.25+     *                                             +
+      -                         *                         -        -                                                   -
+      -                        **                         -        -                                                   -
+      -                         *                         -        -                                                   -
+      -                         *                         -        -                                                   -
+    26++---------+---------+----*----+---------+---------++   -3.75++---------+---------+----+----+---------+---------++
+    -1.00                      0.0                     1.00     -2.5                       0.0                      2.5
+1
+                                                                                                         STARPAC 2.08D (03/15/90)
++NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES, CONTINUED
+
+
+
+ VARIANCE-COVARIANCE AND CORRELATION MATRICES OF THE ESTIMATED (UNFIXED) PARAMETERS
+ ----------------------------------------------------------------------------------
+
+    - APPROXIMATION BASED ON ASSUMPTION THAT RESIDUALS ARE SMALL
+    - COVARIANCES ARE ABOVE THE DIAGONAL
+    - VARIANCES ARE ON THE DIAGONAL
+    - CORRELATION COEFFICIENTS ARE BELOW THE DIAGONAL
+
+ COLUMN         1                2                3                4
+ 
+      1     0.4950536        0.1054697       -0.1083159       -0.8473111E-05
+      2     0.7347791        0.4161880E-01   -0.2203907E-01   -0.3060758E-05
+      3    -0.6848643       -0.4806036        0.5052696E-01    0.1684308E-05
+      4    -0.7549951       -0.9406144        0.4697722        0.2544165E-09
+
+
+
+ ESTIMATES FROM LEAST SQUARES FIT
+ ---------------------------------
+
+
+                                                                     APPROXIMATE
+                                                             95 PERCENT CONFIDENCE LIMITS
+ INDEX  FIXED   PARAMETER        SD OF PAR       RATIO            LOWER            UPPER
+
+   1      NO    1.9612336       0.70360043       2.787       0.50568933        3.4167779    
+   2      NO    30.399956       0.20400686       149.0        29.977925        30.821987    
+   3      NO    7.0258582       0.22478202       31.26        6.5608497        7.4908667    
+   4      NO   0.20656149E-03   0.15950439E-04   12.95       0.17356468E-03   0.23955830E-03
+   5     YES   0.88500000E-05          ---        ---               ---              ---
+   6     YES   0.88500000E-05          ---        ---               ---              ---
+   7     YES           0.              ---        ---               ---              ---
+   8     YES           0.              ---        ---               ---              ---
+   9     YES           0.              ---        ---               ---              ---
+  10     YES           0.              ---        ---               ---              ---
+
+
+ RESIDUAL SUM OF SQUARES                  1.280721    
+
+ RESIDUAL STANDARD DEVIATION             0.2359735    
+ BASED ON DEGREES OF FREEDOM       27 -   4 =   23
+
+ APPROXIMATE CONDITION NUMBER             136216.5    
+
+
+
+
+
+     STARPAC output for Reach #  2
+
+
+
+                                                                                                         STARPAC 2.08D (03/15/90)
++**********************************************************************************
+ *  NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES  *
+ **********************************************************************************
+
+
+ SUMMARY OF INITIAL CONDITIONS
+ ------------------------------
+
+
+                                                  STEP SIZE FOR    OBSERVATIONS FAILING STEP SIZE SELECTION CRITERIA
+                                                  APPROXIMATING                     *
+       PARAMETER STARTING VALUE      SCALE          DERIVATIVE       COUNT     NOTES     ROW NUMBER
+ INDEX  FIXED      (PAR)            (SCALE)           (STP)                     F C
+
+   1      NO   0.40271090           DEFAULT      0.37041516E-04         0          
+   2      NO    48.151500           DEFAULT      0.63712642E-06         0          
+   3      NO    14.399270           DEFAULT      0.27784621E-05         0          
+   4      NO   0.16683250E-03       DEFAULT      0.31141702E-05         0          
+   5     YES   0.88500000E-05         ---              ---              -
+   6     YES   0.88500000E-05         ---              ---              -
+   7     YES           0.             ---              ---              -
+   8     YES           0.             ---              ---              -
+   9     YES           0.             ---              ---              -
+  10     YES           0.             ---              ---              -
+
+
+ *  NOTES.  A PLUS (+) IN THE COLUMNS HEADED F OR C HAS THE FOLLOWING MEANING.
+
+    F - NUMBER OF OBSERVATIONS FAILING STEP SIZE SELECTION CRITERIA EXCEEDS
+        NUMBER OF EXEMPTIONS ALLOWED.
+
+    C - HIGH CURVATURE IN THE MODEL IS SUSPECTED AS THE CAUSE OF
+        ALL FAILURES NOTED.
+
+ NUMBER OF RELIABLE DIGITS IN MODEL RESULTS                         (NETA)    12
+
+ PROPORTION OF OBSERVATIONS EXEMPTED FROM SELECTION CRITERIA       (EXMPT)  0.1000
+
+ NUMBER OF OBSERVATIONS EXEMPTED FROM SELECTION CRITERIA                       1
+
+ NUMBER OF OBSERVATIONS                                                (N)    18
+
+ NUMBER OF NON ZERO WEIGHTED OBSERVATIONS                           (NNZW)    18
+
+ NUMBER OF INDEPENDENT VARIABLES                                       (M)     1
+
+ MAXIMUM NUMBER OF ITERATIONS ALLOWED                                (MIT)   100
+
+ MAXIMUM NUMBER OF MODEL SUBROUTINE CALLS ALLOWED                            200
+
+ CONVERGENCE CRITERION FOR TEST BASED ON THE
+
+      FORECASTED RELATIVE CHANGE IN RESIDUAL SUM OF SQUARES       (STOPSS)  0.1000E-04
+      MAXIMUM SCALED RELATIVE CHANGE IN THE PARAMETERS             (STOPP)  0.1000E-04
+
+
+ MAXIMUM CHANGE ALLOWED IN THE PARAMETERS AT THE FIRST ITERATION   (DELTA)   1.000    
+
+ RESIDUAL SUM OF SQUARES FOR INPUT PARAMETER VALUES                         0.3414    
+
+ RESIDUAL STANDARD DEVIATION FOR INPUT PARAMETER VALUES              (RSD)  0.1562    
+1
+                                                                                                         STARPAC 2.08D (03/15/90)
++NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES, CONTINUED
+
+
+ ITERATION NUMBER    1
+ ----------------------
+     MODEL                                                     FORECASTED
+     CALLS         RSD             RSS        REL CHNG RSS    REL CHNG RSS    REL CHNG PAR
+                                                              VALUE   CHKD    VALUE   CHKD
+         2      0.1561          0.3412          0.4091E-03  0.4087E-03   Y  0.8115E-04   Y
+
+      CURRENT PARAMETER VALUES (ONLY UNFIXED PARAMETERS ARE LISTED)
+          INDEX    1              2              3              4
+          VALUE  0.4068670       48.14884       14.38095      0.1666098E-03
+
+
+ ITERATION NUMBER    2
+ ----------------------
+     MODEL                                                     FORECASTED
+     CALLS         RSD             RSS        REL CHNG RSS    REL CHNG RSS    REL CHNG PAR
+                                                              VALUE   CHKD    VALUE   CHKD
+         3      0.1561          0.3412         -0.8724E-08  0.3924E-06   Y  0.9360E-05   Y
+
+      CURRENT PARAMETER VALUES (ONLY UNFIXED PARAMETERS ARE LISTED)
+          INDEX    1              2              3              4
+          VALUE  0.4068670       48.14884       14.38095      0.1666098E-03
+
+ ***** PARAMETER AND RESIDUAL SUM OF SQUARES CONVERGENCE *****
+1
+                                                                                                         STARPAC 2.08D (03/15/90)
++NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES, CONTINUED
+
+
+ RESULTS FROM LEAST SQUARES FIT
+ -------------------------------
+
+                                                     DEPENDENT       PREDICTED      STD DEV OF                         STD 
+  ROW             PREDICTOR VALUES                    VARIABLE         VALUE        PRED VALUE        RESIDUAL         RES    WEIGHT
+ 
+    1                 12.750000                             0.      0.79527311E-04  0.17708055E-03 -0.79527311E-04    0.00 0.100E+01
+    2                 13.030000                     0.37000000      0.39831103E-01  0.43849328E-01  0.33016890        2.20 0.100E+01
+    3                 13.470000                      4.0700000       4.1361183      0.13739720     -0.66118333E-01   -0.89 0.100E+01
+    4                 13.550000                      5.2300000       5.2160036      0.11681272      0.13996385E-01    0.14 0.100E+01
+    5                 13.630000                      6.0000000       5.8748542      0.10297173      0.12514585        1.07 0.100E+01
+    6                 13.750000                      6.3300000       6.2595520      0.10840836      0.70447955E-01    0.63 0.100E+01
+    7                 14.000000                      6.0300000       6.2210378      0.81324758E-01 -0.19103781       -1.43 0.100E+01
+    8                 14.250000                      5.4400000       5.5246326      0.83778434E-01 -0.84632618E-01   -0.64 0.100E+01
+    9                 14.500000                      4.6800000       4.6953067      0.81459805E-01 -0.15306678E-01   -0.11 0.100E+01
+   10                 14.750000                      4.0200000       3.8752597      0.70065234E-01  0.14474026        1.04 0.100E+01
+   11                 15.000000                      3.2800000       3.1197108      0.58110985E-01  0.16028918        1.11 0.100E+01
+   12                 15.250000                      2.4000000       2.4592817      0.47937503E-01 -0.59281686E-01   -0.40 0.100E+01
+   13                 15.500000                      2.0600000       1.9138470      0.45153168E-01  0.14615299        0.98 0.100E+01
+   14                 15.750000                      1.5200000       1.4724286      0.44726281E-01  0.47571377E-01    0.32 0.100E+01
+   15                 16.000000                      1.0100000       1.1195571      0.43951889E-01 -0.10955715       -0.73 0.100E+01
+   16                 16.250000                     0.79000000      0.84063680      0.41846458E-01 -0.50636804E-01   -0.34 0.100E+01
+   17                 16.500000                     0.49000000      0.62245861      0.38493086E-01 -0.13245861       -0.88 0.100E+01
+   18                 17.250000                             0.      0.23925223      0.25231267E-01 -0.23925223       -1.55 0.100E+01
+1
+                                                                                                         STARPAC 2.08D (03/15/90)
++NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES, CONTINUED
+
+                     STD RES VS ROW NUMBER                                     STD RES VS PREDICTED VALUES 
+  3.75++---------+---------+----+----+---------+---------++    3.75++---------+---------+----+----+---------+---------++
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+  2.25+                                                   +    2.25+                                                   +
+      -   *                                               -        -*                                                  -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -            *                *                     -        -                         *                     *   -
+  0.75+                          *        *               +    0.75+               *               *                   +
+      -               *                                   -        -                                                  *-
+      -                                      *            -        -            *                                      -
+      -*        *              *                          -        -*                                     *   *        -
+      -                                *           *      -        -       *            *                              -
+ -0.75+                     *                   *         +   -0.75+         *                                  *      +
+      -      *                                        *   -        -     *                           *                 -
+      -                                                   -        -                                                   -
+      -                  *                               *-        -  *                                               *-
+      -                                                   -        -                                                   -
+ -2.25+                                                   +   -2.25+                                                   +
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+ -3.75++---------+---------+----+----+---------+---------++   -3.75++---------+---------+----+----+---------+---------++
+      1.0                      9.5                     18.0     0.7953E-04                3.130                6.260    
+
+             AUTOCORRELATION FUNCTION OF RESIDUALS                        NORMAL PROBABILITY PLOT OF STD RES 
+     1++---------+---------+----***--+---------+---------++    3.75++---------+---------+----+----+---------+---------++
+      -                        **                         -        -                                                   -
+      -                         ***                       -        -                                                   -
+      -                        **                         -        -                                                   -
+      -                    ******                         -        -                                                   -
+     6+                      ****                         +    2.25+                                                   +
+      -                     *****                         -        -                                           *       -
+      -                         ****                      -        -                                                   -
+      -                         ******                    -        -                                                   -
+      -                         *                         -        -                                   *  *            -
+    11+                         ******                    +    0.75+                               * *                 +
+      -                         *                         -        -                              *                    -
+      -                     *****                         -        -                            *                      -
+      -                         *                         -        -                         * *                       -
+      -                       ***                         -        -                      **                           -
+    16+                    ******                         +   -0.75+                   **                              +
+      -                         *                         -        -               * *                                 -
+      -                                                   -        -                                                   -
+      -                                                   -        -       *    *                                      -
+      -                                                   -        -                                                   -
+    21+                                                   +   -2.25+                                                   +
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+      -                                                   -        -                                                   -
+    26++---------+---------+----+----+---------+---------++   -3.75++---------+---------+----+----+---------+---------++
+    -1.00                      0.0                     1.00     -2.5                       0.0                      2.5
+1
+                                                                                                         STARPAC 2.08D (03/15/90)
++NONLINEAR LEAST SQUARES ESTIMATION WITH NUMERICALLY APPROXIMATED DERIVATIVES, CONTINUED
+
+
+
+ VARIANCE-COVARIANCE AND CORRELATION MATRICES OF THE ESTIMATED (UNFIXED) PARAMETERS
+ ----------------------------------------------------------------------------------
+
+    - APPROXIMATION BASED ON ASSUMPTION THAT RESIDUALS ARE SMALL
+    - COVARIANCES ARE ABOVE THE DIAGONAL
+    - VARIANCES ARE ON THE DIAGONAL
+    - CORRELATION COEFFICIENTS ARE BELOW THE DIAGONAL
+
+ COLUMN         1                2                3                4
+ 
+      1     0.8394348       -0.2510657E-01   -0.5146986       -0.6742411E-05
+      2    -0.6301649E-01    0.1890947       -0.7036774E-02   -0.4703151E-05
+      3    -0.7817016       -0.2251725E-01    0.5164604        0.4111356E-05
+      4    -0.5140171       -0.7554487        0.3995971        0.2049691E-09
+
+
+
+ ESTIMATES FROM LEAST SQUARES FIT
+ ---------------------------------
+
+
+                                                                     APPROXIMATE
+                                                             95 PERCENT CONFIDENCE LIMITS
+ INDEX  FIXED   PARAMETER        SD OF PAR       RATIO            LOWER            UPPER
+
+   1      NO   0.40686695       0.91620674      0.4441       -1.5585410        2.3722749    
+   2      NO    48.148837       0.43485026       110.7        47.216015        49.081660    
+   3      NO    14.380955       0.71865177       20.01        12.839333        15.922576    
+   4      NO   0.16660976E-03   0.14316742E-04   11.64       0.13589809E-03   0.19732143E-03
+   5     YES   0.88500000E-05          ---        ---               ---              ---
+   6     YES   0.88500000E-05          ---        ---               ---              ---
+   7     YES           0.              ---        ---               ---              ---
+   8     YES           0.              ---        ---               ---              ---
+   9     YES           0.              ---        ---               ---              ---
+  10     YES           0.              ---        ---               ---              ---
+
+
+ RESIDUAL SUM OF SQUARES                 0.3412300    
+
+ RESIDUAL STANDARD DEVIATION             0.1561204    
+ BASED ON DEGREES OF FREEDOM       18 -   4 =   14
+
+ APPROXIMATE CONDITION NUMBER             198868.8    

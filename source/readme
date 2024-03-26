@@ -1,0 +1,49 @@
+
+  OTIS: One-dimensional Transport with Inflow and Storage
+  -------------------------------------------------------
+  Version: MOD40         Feb. 1998
+  
+  OTIS is a mathematical simulation model used to characterize the
+  fate and transport of water-borne solutes in streams and rivers.
+  The governing equation underlying the model is the advection-
+  dispersion equation with additional terms to account for transient
+  storage, lateral inflow, first-order decay and sorption. This
+  equation and the associated equations describing transient
+  storage and sorption are solved using a Crank-Nicolson finite
+  difference solution.
+
+  A modified version of OTIS, OTIS-P, couples the solution of the
+  governing equations with a nonlinear regression package.  OTIS-P
+  determines an 'optimal' set of parameter estimates that minimize the 
+  squared differences between the simulated and observed concentrations.
+
+  OTIS, OTIS-P and related materials are made available by the U.S.
+  Geological Survey (USGS) to be used in the public interest and the
+  advancement of science. You may, without any fee or cost, use, copy,
+  modify, or distribute this software, and any derivative works thereof,
+  and its supporting documentation, SUBJECT TO the USGS software User's
+  Rights Notice, http://water.usgs.gov/software/software_notice.html
+
+---------------------------------------------------------------------------
+
+  Reference
+  ---------
+  Runkel, R.L., 1998, One dimensional transport with inflow and
+    storage (OTIS): A solute transport model for streams and rivers:
+    U.S. Geological Survey Water-Resources Investigation Report
+    98-4018. xx p.
+
+  Homepage:  http://webserver.cr.usgs.gov/otis
+  ---------
+
+  Correspondence
+  --------------
+  R.L. Runkel
+  U.S. Geological Survey
+  Mail Stop 415
+  Denver Federal Center
+  Lakewood, CO 80225
+  Internet: runkel@usgs.gov
+
+
+

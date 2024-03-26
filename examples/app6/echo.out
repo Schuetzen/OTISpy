@@ -1,0 +1,309 @@
+
+
+          OTIS SOLUTE TRANSPORT MODEL W/ PARAMETER ESTIMATION
+                      Version: MOD40 (May 1997)     
+                      -----------------------------
+
+
+          Runtime Information
+          -------------------
+          Date and Time :  
+
+
+
+          I/O Files
+          ---------
+          PARAMETER FILE     : params.inp                              
+          FLOW FILE          : q.inp                                   
+          DATA FILE          : data.inp                                
+          STARPAC INPUT FILE : star.inp                                
+          PARAMETER ESTIMATES: params.out                              
+          STARPAC OUTPUT FILE: star.out                                
+
+
+
+
+
+
+          Input Data
+          ----------
+
+          SK86 Steady-State Iron                                                          
+
+
+          Print Option                              :     2
+          Requested Print Interval              [hr]:   0.00000E+00
+          Integration Time Step                 [hr]:   0.00000E+00
+          Starting Time                         [hr]:   0.00000E+00
+          Ending Time                           [hr]:   0.00000E+00
+          Starting Distance                      [L]:   0.00000E+00
+          Downstream Boundary Condition [mass/L^2-s]:   0.00000E+00
+          Simulation Type  [dynamic or steady-state]:  Steady-State
+
+
+
+          Number of Reaches  :     7
+
+
+          Reach Information
+          -----------------
+
+          Reach   Start    End    Start           End
+          No.     Seg.     Seg.   Distance [L]    Distance [L]
+          ----------------------------------------------------
+              1       1      26       0.000          26.000
+              2      27     363      26.000         363.000
+              3     364     484     363.000         484.000
+              4     485     526     484.000         526.000
+              5     527     948     526.000         948.000
+              6     949    1557     948.000        1557.000
+              7    1558    1904    1557.000        1904.000
+
+
+
+          Number of Spatial Segments    : 1904
+
+
+          Reach Parameters
+          ----------------
+
+          Reach  No.     Reach         Segment      Dispersion
+          No.    Segs.   Length [L]    Length [L]   Coeff.[L^2/s]
+          --------------------------------------------------------
+             1      26       26.000        1.000    2.00000E-02
+             2     337      337.000        1.000    2.00000E-02
+             3     121      121.000        1.000    2.00000E-02
+             4      42       42.000        1.000    2.00000E-02
+             5     422      422.000        1.000    2.00000E-02
+             6     609      609.000        1.000    2.00000E-02
+             7     347      347.000        1.000    2.00000E-02
+
+
+          Storage Parameters
+          ------------------
+                 Storage      Storage
+          Reach  Zone Area    Rate
+          No.    [L^2]        [/sec]
+          ---------------------------------
+              1  5.00000E-02  3.00000E-05
+              2  5.00000E-02  2.00000E-05
+              3  5.00000E-02  2.00000E-05
+              4  2.50000E-01  2.00000E-05
+              5  1.00000E-01  1.50000E-05
+              6  2.00000E-01  5.00000E-05
+              7  2.00000E-01  3.00000E-05
+
+
+
+          Number of Solutes:   1
+          Decay Option     :   1
+          Sorption Option  :   0
+
+
+          Decay Coefficients, Solute #  1
+          --------------------------------
+                           Coefficient
+          Reach        Channel       Storage
+          No.         [/second]     [/second]
+          ------------------------------------
+              1       0.000E+00     0.000E+00
+              2       0.000E+00     0.000E+00
+              3       0.000E+00     0.000E+00
+              4       0.000E+00     0.000E+00
+              5       0.000E+00     0.000E+00
+              6       0.000E+00     0.000E+00
+              7       0.000E+00     0.000E+00
+
+
+
+          Number of Print Locations :   0
+          Interpolation Option      :   0
+
+          Printing Information
+          --------------------
+          Requested         Effective
+          Print             Print
+          Location [L]      Location [L]
+          ------------------------------
+
+
+
+          Flow and Area Data
+          ------------------
+          Flow Option                              :   Steady  
+          Flow interval                       [hr] :   0.00000E+00
+
+
+          Initial Flow and Area Values
+          ----------------------------
+
+          Flowrate at Upstream Boundary    [L^3/sec]:   6.12000E-03
+
+
+                    Lateral         Lateral         X-sect.
+          Reach     Inflow          Outflow         Area
+          No.       [L^3/s-L]       [L^3/s-L]       [L^2]
+          -------------------------------------------------------
+              1     0.00000E+00     0.00000E+00     1.20000E-01
+              2     3.78000E-06     0.00000E+00     9.70000E-02
+              3     3.78000E-06     0.00000E+00     9.70000E-02
+              4     1.70000E-04     0.00000E+00     1.38000E-01
+              5     4.12000E-06     0.00000E+00     1.99000E-01
+              6     4.84000E-06     0.00000E+00     1.52000E-01
+              7     0.00000E+00     2.03000E-05     1.53000E-01
+
+
+          Initial Lateral Inflow Concentrations, Solute #  1
+          ---------------------------------------------------
+                     Inflow
+          Reach      Concent.
+          No.        [mass/L^3]
+          -----------------------
+             1       5.60000E-01
+             2       5.60000E-01
+             3       2.11000E+02
+             4       5.60000E-01
+             5       5.60000E-01
+             6       5.60000E-01
+             7       5.60000E-01
+
+
+          Number of Upstream Boundary Conditions:   1
+          Boundary Condition Option             :   1
+
+
+          Upstream Boundary Conditions, Solute #  1
+          -------------------------------------------
+          Begin                Concentration
+          Time [hour]          [mass/L^3]
+          ----------------------------------
+           0.0000E+00           6.4000E-01
+
+
+          STARPAC Input Parameters
+          ------------------------
+          Weight Revision Option                 :       0
+          Variance/Covariance Option, IVAPRX     :       1
+          Maximum Number of Iterations, MIT      :     100
+          STARPAC Print Option, NPRT             :   22222
+          Maximum Scaled Change, DELTA           :   1.00000E+00
+          Convergence Test Stopping Value, STOPP :   1.00000E-05
+          Convergence Test Stopping Value, STOPSS:   1.00000E-05
+
+
+          Model Parameters
+
+          Parameter                                Status             SCALE
+          --------------------------------------------------------------------
+          Dispersion Coefficient                   Fixed           0.00000E+00
+          Main Channel Cross-Sectional Area        Fixed           0.00000E+00
+          Storage Zone Area                        Fixed           0.00000E+00
+          Storage Zone Exchange Coefficient        Fixed           0.00000E+00
+          Main Channel First-Order Decay Rate      Estimated       0.00000E+00
+          Storage Zone First-Order Decay Rate      Fixed           0.00000E+00
+          Accessible Sediment/Volume Water         Fixed           0.00000E+00
+          Distribution Coefficient                 Fixed           0.00000E+00
+          Main Channel Sorption Rate Coefficient   Fixed           0.00000E+00
+          Storage Zone Sorption Rate Coefficient   Fixed           0.00000E+00
+
+
+          Observed Concentration Data, Reach #  1
+          ---------------------------------------
+          Number of Observations:  0
+
+            Distance     Concentration
+          ----------------------------------------
+
+
+          Observed Concentration Data, Reach #  2
+          ---------------------------------------
+          Number of Observations:  2
+
+            Distance     Concentration
+          ----------------------------------------
+            26.0000      6.4000E-01
+           363.0000      6.3000E-01
+
+
+          Observed Concentration Data, Reach #  3
+          ---------------------------------------
+          Number of Observations:  7
+
+            Distance     Concentration
+          ----------------------------------------
+           363.0000      6.3000E-01
+           413.0000      1.5000E+00
+           421.0000      2.5000E+00
+           439.0000      5.6000E+00
+           455.0000      1.2000E+01
+           464.0000      1.2000E+01
+           484.0000      1.3000E+01
+
+
+          Observed Concentration Data, Reach #  4
+          ---------------------------------------
+          Number of Observations:  2
+
+            Distance     Concentration
+          ----------------------------------------
+           484.0000      1.3000E+01
+           526.0000      5.0000E+00
+
+
+          Observed Concentration Data, Reach #  5
+          ---------------------------------------
+          Number of Observations:  8
+
+            Distance     Concentration
+          ----------------------------------------
+           526.0000      5.0000E+00
+           586.0000      4.4000E+00
+           641.0000      4.2000E+00
+           701.0000      3.9000E+00
+           754.0000      3.8000E+00
+           781.0000      3.4000E+00
+           881.0000      2.9000E+00
+           948.0000      1.4000E+00
+
+
+          Observed Concentration Data, Reach #  6
+          ---------------------------------------
+          Number of Observations:  7
+
+            Distance     Concentration
+          ----------------------------------------
+           948.0000      1.4000E+00
+          1068.0000      2.5000E+00
+          1265.0000      1.7000E+00
+          1308.0000      1.8000E+00
+          1421.0000      1.7000E+00
+          1497.0000      1.6000E+00
+          1557.0000      1.3000E+00
+
+
+          Observed Concentration Data, Reach #  7
+          ---------------------------------------
+          Number of Observations:  5
+
+            Distance     Concentration
+          ----------------------------------------
+          1557.0000      1.3000E+00
+          1677.0000      1.3000E+00
+          1767.0000      1.2000E+00
+          1776.0000      1.4000E+00
+          1804.0000      1.4000E+00
+
+
+          Output Files for Solutes
+          ------------------------
+          Solute #            File Name
+          ---------------------------------
+                1             fe.out                                  
+
+
+          Initial Conditions at the Print Locations
+          -----------------------------------------
+
+          Location  Prev.    Inter.         Flow
+          [L]       Seg.     Weight        [L^3/sec]
+          ----------------------------------------------

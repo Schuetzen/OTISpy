@@ -1,0 +1,22 @@
+##########################################################################
+#
+#                        OTIS steady flow file
+#
+#   Hypothetical Problem
+#   Solute Transport with First-Order Decay
+#
+#   Parameter Values from:
+#
+#   Runkel, R.L., 1996, J. of Environ. Engineering,v.122,no.9,p. 830-832. 
+#
+##########################################################################
+0.00                 QSTEP [hour]
+0.1                  QSTART [L^3/second]
+############################################################
+#            for I = 1, NREACH
+#
+#QLATIN       QLATOUT      AREA         (CLATIN J=1,NSOLUTE)
+#            |            |            |            |
+############################################################
+0.00         0.00         1.0          0.0
+

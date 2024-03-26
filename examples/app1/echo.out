@@ -1,0 +1,188 @@
+
+
+                      OTIS SOLUTE TRANSPORT MODEL            
+                      Version: MOD40 (May 1997)     
+                      -----------------------------
+
+
+          Runtime Information
+          -------------------
+          Date and Time :  
+
+
+
+          Input Files
+          -----------
+          PARAMETER FILE: params.inp                              
+          FLOW FILE     : q.inp                                   
+
+
+
+          Input Data
+          ----------
+
+          Bencala & Walters, Uvas Creek Chloride                                          
+
+
+          Print Option                              :     2
+          Requested Print Interval              [hr]:   1.00000E-01
+          Integration Time Step                 [hr]:   5.00000E-02
+          Starting Time                         [hr]:   8.25000E+00
+          Ending Time                           [hr]:   2.40000E+01
+          Starting Distance                      [L]:   0.00000E+00
+          Downstream Boundary Condition [mass/L^2-s]:   0.00000E+00
+          Simulation Type  [dynamic or steady-state]:       Dynamic
+
+
+
+          Number of Reaches  :     5
+
+
+          Reach Information
+          -----------------
+
+          Reach   Start    End    Start           End
+          No.     Seg.     Seg.   Distance [L]    Distance [L]
+          ----------------------------------------------------
+              1       1      38       0.000          38.000
+              2      39     105      38.000         105.000
+              3     106     281     105.000         281.000
+              4     282     433     281.000         433.000
+              5     434     669     433.000         669.000
+
+
+
+          Number of Spatial Segments    :  669
+
+
+          Reach Parameters
+          ----------------
+
+          Reach  No.     Reach         Segment      Dispersion
+          No.    Segs.   Length [L]    Length [L]   Coeff.[L^2/s]
+          --------------------------------------------------------
+             1      38       38.000        1.000    1.20000E-01
+             2      67       67.000        1.000    1.50000E-01
+             3     176      176.000        1.000    2.40000E-01
+             4     152      152.000        1.000    3.10000E-01
+             5     236      236.000        1.000    4.00000E-01
+
+
+          Storage Parameters
+          ------------------
+                 Storage      Storage
+          Reach  Zone Area    Rate
+          No.    [L^2]        [/sec]
+          ---------------------------------
+              1  5.00000E-02  0.00000E+00
+              2  5.00000E-02  0.00000E+00
+              3  3.60000E-01  3.00000E-05
+              4  4.10000E-01  1.00000E-05
+              5  1.56000E+00  4.50000E-05
+
+
+
+          Number of Solutes:   1
+          Decay Option     :   0
+          Sorption Option  :   0
+
+
+
+          Number of Print Locations :   5
+          Interpolation Option      :   0
+
+          Printing Information
+          --------------------
+          Requested         Effective
+          Print             Print
+          Location [L]      Location [L]
+          ------------------------------
+                38.000            37.500
+               105.000           104.500
+               281.000           280.500
+               433.000           432.500
+               619.000           618.500
+
+
+
+          Flow and Area Data
+          ------------------
+          Flow Option                              :   Steady  
+          Flow interval                       [hr] :   0.00000E+00
+
+
+          Initial Flow and Area Values
+          ----------------------------
+
+          Flowrate at Upstream Boundary    [L^3/sec]:   1.25000E-02
+
+
+                    Lateral         Lateral         X-sect.
+          Reach     Inflow          Outflow         Area
+          No.       [L^3/s-L]       [L^3/s-L]       [L^2]
+          -------------------------------------------------------
+              1     0.00000E+00     0.00000E+00     3.00000E-01
+              2     0.00000E+00     0.00000E+00     4.20000E-01
+              3     4.54500E-06     0.00000E+00     3.60000E-01
+              4     1.97400E-06     0.00000E+00     4.10000E-01
+              5     2.15100E-06     0.00000E+00     5.20000E-01
+
+
+          Initial Lateral Inflow Concentrations, Solute #  1
+          ---------------------------------------------------
+                     Inflow
+          Reach      Concent.
+          No.        [mass/L^3]
+          -----------------------
+             1       3.70000E+00
+             2       3.70000E+00
+             3       3.70000E+00
+             4       3.70000E+00
+             5       3.70000E+00
+
+
+          Number of Upstream Boundary Conditions:   3
+          Boundary Condition Option             :   1
+
+
+          Upstream Boundary Conditions, Solute #  1
+          -------------------------------------------
+          Begin                Concentration
+          Time [hour]          [mass/L^3]
+          ----------------------------------
+           8.2500E+00           3.7000E+00
+           8.4000E+00           1.1400E+01
+           1.1400E+01           3.7000E+00
+
+
+          Output Files for Solutes
+          ------------------------
+          Solute #            File Name
+          ---------------------------------
+                1             cl.out                                  
+
+
+          Initial Conditions at the Print Locations
+          -----------------------------------------
+
+          Location  Prev.    Inter.         Flow
+          [L]       Seg.     Weight        [L^3/sec]
+          ----------------------------------------------
+              37.50    38   0.000000E+00   1.250000E-02
+             104.50   105   0.000000E+00   1.250000E-02
+             280.50   281   0.000000E+00   1.329765E-02
+             432.50   433   0.000000E+00   1.359898E-02
+             618.50   619   0.000000E+00   1.399898E-02
+
+
+          Initial Conditions, Solute #  1
+          --------------------------------
+                              Concentration
+          Location        Channel       Storage
+          [L]            [mass/L^3]    [mass/L^3]
+          -----------------------------------------
+              37.50       3.700E+00     0.000E+00
+             104.50       3.700E+00     0.000E+00
+             280.50       3.700E+00     3.700E+00
+             432.50       3.700E+00     3.700E+00
+             618.50       3.700E+00     3.700E+00

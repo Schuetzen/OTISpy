@@ -1,0 +1,202 @@
+
+
+                      OTIS SOLUTE TRANSPORT MODEL            
+                      Version: MOD39 (January 1997) 
+                      -----------------------------
+
+
+          Runtime Information
+          -------------------
+          Date and Time :  
+
+
+
+          Input Files
+          -----------
+          PARAMETER FILE: params.inp                              
+          FLOW FILE     : q.inp                                   
+
+
+
+          Input Data
+          ----------
+
+          SK86 Steady-State Iron                                                          
+
+
+          Print Option                              :     2
+          Requested Print Interval              [hr]:   0.00000E+00
+          Integration Time Step                 [hr]:   0.00000E+00
+          Starting Time                         [hr]:   0.00000E+00
+          Ending Time                           [hr]:   0.00000E+00
+          Starting Distance                      [L]:   0.00000E+00
+          Downstream Boundary Condition [mass/L^2-s]:   0.00000E+00
+          Simulation Type  [dynamic or steady-state]:  Steady-State
+
+
+
+          Number of Reaches  :     7
+
+
+          Reach Information
+          -----------------
+
+          Reach   Start    End    Start           End
+          No.     Seg.     Seg.   Distance [L]    Distance [L]
+          ----------------------------------------------------
+              1       1      26       0.000          26.000
+              2      27     363      26.000         363.000
+              3     364     484     363.000         484.000
+              4     485     526     484.000         526.000
+              5     527     948     526.000         948.000
+              6     949    1557     948.000        1557.000
+              7    1558    1904    1557.000        1904.000
+
+
+
+          Number of Spatial Segments    : 1904
+
+
+          Reach Parameters
+          ----------------
+
+          Reach  No.     Reach         Segment      Dispersion
+          No.    Segs.   Length [L]    Length [L]   Coeff.[L^2/s]
+          --------------------------------------------------------
+             1      26       26.000        1.000    2.00000E-02
+             2     337      337.000        1.000    2.00000E-02
+             3     121      121.000        1.000    2.00000E-02
+             4      42       42.000        1.000    2.00000E-02
+             5     422      422.000        1.000    2.00000E-02
+             6     609      609.000        1.000    2.00000E-02
+             7     347      347.000        1.000    2.00000E-02
+
+
+          Storage Parameters
+          ------------------
+                 Storage      Storage
+          Reach  Zone Area    Rate
+          No.    [L^2]        [/sec]
+          ---------------------------------
+              1  5.00000E-02  3.00000E-05
+              2  5.00000E-02  2.00000E-05
+              3  5.00000E-02  2.00000E-05
+              4  2.50000E-01  2.00000E-05
+              5  1.00000E-01  1.50000E-05
+              6  2.00000E-01  5.00000E-05
+              7  2.00000E-01  3.00000E-05
+
+
+
+          Number of Solutes:   1
+          Decay Option     :   1
+          Sorption Option  :   0
+
+
+          Decay Coefficients, Solute #  1
+          --------------------------------
+                           Coefficient
+          Reach        Channel       Storage
+          No.         [/second]     [/second]
+          ------------------------------------
+              1       0.000E+00     0.000E+00
+              2       0.000E+00     0.000E+00
+              3       0.000E+00     0.000E+00
+              4       0.000E+00     0.000E+00
+              5       0.000E+00     0.000E+00
+              6       0.000E+00     0.000E+00
+              7       0.000E+00     0.000E+00
+
+
+
+          Number of Print Locations :   7
+          Interpolation Option      :   0
+
+          Printing Information
+          --------------------
+          Requested         Effective
+          Print             Print
+          Location [L]      Location [L]
+          ------------------------------
+                26.000            25.500
+               363.000           362.500
+               484.000           483.500
+               526.000           525.500
+               948.000           947.500
+              1557.000          1556.500
+              1804.000          1803.500
+
+
+
+          Flow and Area Data
+          ------------------
+          Flow Option                              :   Steady  
+          Flow interval                       [hr] :   0.00000E+00
+
+
+          Initial Flow and Area Values
+          ----------------------------
+
+          Flowrate at Upstream Boundary    [L^3/sec]:   6.12000E-03
+
+
+                    Lateral         Lateral         X-sect.
+          Reach     Inflow          Outflow         Area
+          No.       [L^3/s-L]       [L^3/s-L]       [L^2]
+          -------------------------------------------------------
+              1     0.00000E+00     0.00000E+00     1.20000E-01
+              2     3.78000E-06     0.00000E+00     9.70000E-02
+              3     3.78000E-06     0.00000E+00     9.70000E-02
+              4     1.70000E-04     0.00000E+00     1.38000E-01
+              5     4.12000E-06     0.00000E+00     1.99000E-01
+              6     4.84000E-06     0.00000E+00     1.52000E-01
+              7     0.00000E+00     2.03000E-05     1.53000E-01
+
+
+          Initial Lateral Inflow Concentrations, Solute #  1
+          ---------------------------------------------------
+                     Inflow
+          Reach      Concent.
+          No.        [mass/L^3]
+          -----------------------
+             1       5.60000E-01
+             2       5.60000E-01
+             3       2.11000E+02
+             4       5.60000E-01
+             5       5.60000E-01
+             6       5.60000E-01
+             7       5.60000E-01
+
+
+          Number of Upstream Boundary Conditions:   1
+          Boundary Condition Option             :   1
+
+
+          Upstream Boundary Conditions, Solute #  1
+          -------------------------------------------
+          Begin                Concentration
+          Time [hour]          [mass/L^3]
+          ----------------------------------
+           0.0000E+00           6.4000E-01
+
+
+          Output Files for Solutes
+          ------------------------
+          Solute #            File Name
+          ---------------------------------
+                1             fe.out                                  
+
+
+          Initial Conditions at the Print Locations
+          -----------------------------------------
+
+          Location  Prev.    Inter.         Flow
+          [L]       Seg.     Weight        [L^3/sec]
+          ----------------------------------------------
+              25.50    26   0.000000E+00   6.120000E-03
+             362.50   363   0.000000E+00   7.391970E-03
+             483.50   484   0.000000E+00   7.849350E-03
+             525.50   526   0.000000E+00   1.490624E-02
+             947.50   948   0.000000E+00   1.672782E-02
+            1556.50  1557   0.000000E+00   1.967502E-02
+            1803.50  1804   0.000000E+00   1.467349E-02
